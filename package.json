@@ -16,9 +16,12 @@
   },
   "dependencies": {
     "@graphql-tools/schema": "^8.5.0",
-    "apollo-server-express": "^3.10.0",
+    "apollo-server-express": "^2",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "graphql": "^16.5.0"
+    "graphql": "^15.8",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.3"
   }
 }
