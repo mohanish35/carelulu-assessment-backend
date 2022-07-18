@@ -1,0 +1,14 @@
+type User implements Timestamps {
+  uuid: String!
+  name: String!
+  email: String!
+  createdAt: Date!
+  updatedAt: Date!
+  todos: [Todo]!
+}
+
+input UserRegisterInput {
+  name: String!
+  email: String!
+  password: String!
+}

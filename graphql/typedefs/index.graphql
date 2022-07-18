@@ -1,5 +1,10 @@
 scalar Date
 
 type Query {
-  todos(userId: ID!): [Todo]!
+  user(uuid: ID!): User!
+}
+
+type Mutation {
+  registerUser(user: UserRegisterInput!): User!
+  createTodo(todo: TodoCreateInput!): Todo!
 }

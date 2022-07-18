@@ -1,4 +1,11 @@
 type Todo {
-  id: ID!
+  uuid: String!
   body: String!
+  updatedAt: Date!
+  createdAt: Date!
+}
+
+input TodoCreateInput {
+  body: String!
+  userUuid: String!
 }
