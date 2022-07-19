@@ -6,5 +6,7 @@ type Query {
 
 type Mutation {
   registerUser(user: UserRegisterInput!): User!
+  loginUser(user: UserLoginInput!): String!
+
   createTodo(todo: TodoCreateInput!): Todo!
 }
